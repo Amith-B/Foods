@@ -1,21 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+//import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "react-native";
+import React, { useRef, useState } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  Button,
+  TouchableHighlight,
+  TouchableWithoutFeedback,
+  TouchableOpacity,
+} from "react-native";
+import ScrollOption from "./app/screens/ScrollOption";
+import FlatListCard from "./app/screens/FlatListCard";
+import Card from "./app/screens/Card";
+import Screen from "./app/components/screen";
+import CardList from "./app/screens/CardList";
+import AppNavigator from "./app/navigation/AppNavigator";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
+  StatusBar.setBackgroundColor("orange");
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Screen style={{ backgroundColor: "#eee" }}>
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
+    </Screen>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
