@@ -1,4 +1,4 @@
 {
-  "appKey": "9f590e2edc584f3b84261fd0ac04ab8a",
-  "urlRecipe": "https://api.spoonacular.com/recipes/random?number=15&apiKey=9f590e2edc584f3b84261fd0ac04ab8a"
+  "appKey": "<KEY>",
+  "urlRecipe": "https://api.spoonacular.com/recipes/random?number=15&apiKey=<KEY>"
 }
